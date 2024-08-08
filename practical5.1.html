@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JS Practical</title>
+</head>
+<body>
+    <h1>Welcome to My JavaScript Page</h1>
+    <p id="demo">This is a paragraph.</p>
+    <button onclick="showAlert()">Click Me</button>
+
+    <script>
+        // Alert
+        function showAlert() {
+            alert("Hello! This is an alert message.");
+        }
+
+        // Document Manipulation
+        document.getElementById("demo").innerHTML = "Paragraph text changed by JavaScript!";
+
+        // Function
+        function addNumbers(a, b) {
+            return a + b;
+        }
+        console.log("Sum of 5 and 3 is: " + addNumbers(5, 3));
+
+        // Array
+        let fruits = ["Apple", "Banana", "Cherry"];
+        console.log("Fruits array: " + fruits);
+
+        // Loop
+        for (let i = 0; i < fruits.length; i++) {
+            console.log("Fruit " + (i + 1) + ": " + fruits[i]);
+        }
+
+        // Condition
+        let age = 20;
+        if (age >= 18) {
+            console.log("You are an adult.");
+        } else {
+            console.log("You are a minor.");
+        }
+    </script>
+</body>
+</html>

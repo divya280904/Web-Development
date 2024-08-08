@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div id="content"></div>
+    <script>
+    let book = {
+        title: "JavaScript: The Good Parts",
+        author: "Douglas Crockford",
+        year: 2008,
+        getSummary: function() {
+            return `${this.title} by ${this.author}, published in ${this.year}`;
+        }
+    };
+
+    let contentDiv = document.getElementById("content");
+
+    contentDiv.innerHTML = book.getSummary(); 
+    </script>
+</body>
+</html>
